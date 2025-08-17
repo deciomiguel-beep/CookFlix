@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookFlix</title>
+  <style>
+    body {
+      background-color: rgb(177, 236, 255);
+      color: rgb(0, 0, 0);
+      font: normal 20pt "Times New Roman", serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font: normal 35pt 'Edwardian Script ITC', cursive;
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+      font: normal 25pt 'Castellar', serif;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .custom-button {
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .feedback-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffffaa;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 15px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .cake-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="confirmarSaida()" class="custom-button">
+      <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+           alt="Ícone TV">
+      Voltar à página inicial
+    </button>
+  </div>
+
+  <h1>Bolo de Alice no País das Maravilhas</h1>
+  <h2>Ingredientes</h2>
+  <h3>Rendimento: 6 mini bolos encantados</h3>
+  <div>
+    <p><strong>Massa:</strong></p>
+    <ul>
+      <li>2 ovos</li>
+      <li>1/2 xícara de açúcar</li>
+      <li>1/4 xícara de manteiga derretida</li>
+      <li>1/2 xícara de leite</li>
+      <li>1 xícara de farinha de trigo</li>
+      <li>1 colher de chá de fermento em pó</li>
+      <li>1 colher de chá de essência de baunilha</li>
+    </ul>
+    <p><strong>Glacê e Decoração:</strong></p>
+    <ul>
+      <li>Glacê real branco</li>
+      <li>Corante alimentício preto para escrever “Eat Me”</li>
+      <li>Confeitos ou detalhes delicados (opcional)</li>
+    </ul>
+  </div>
+
+  <h2>Modo de Preparo</h2>
+  <p>1. Pré-aqueça o forno a 180°C e unte pequenas formas retangulares ou quadradas.</p>
+  <p>2. Bata os ovos com o açúcar até formar um creme claro.</p>
+  <p>3. Acrescente a manteiga derretida, o leite e a essência de baunilha e misture bem.</p>
+  <p>4. Peneire a farinha com o fermento e adicione à massa, misturando delicadamente.</p>
+  <p>5. Distribua a massa nas formas e asse por 15-20 minutos, até firmar levemente. Deixe esfriar completamente.</p>
+  <p>6. Cubra cada mini bolo com glacê branco. Use corante preto para escrever “Eat Me” no topo.</p>
+  <p>7. Decore com confeitos delicados para dar um toque mágico do País das Maravilhas.</p>
+
+  <h3>Experimente o bolo mágico da Rainha Branca! 🎂❄️</h3>
+
+  <h2>Deixe sua Foto ou Opinião Abaixo</h2>
+  <div class="feedback-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="opinion">Sua opinião:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" placeholder="Digite aqui..." required></textarea><br><br>
+
+      <label for="photo">Sua foto (opcional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+<script>
+  function confirmarSaida() {
+    if (confirm("Tem certeza que deseja sair desta página?")) {
+      window.location.href = "site001.html";
+    }
+  }
+</script>
+</body>
+</html>
