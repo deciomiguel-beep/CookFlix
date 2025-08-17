@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookFlix</title>
+  <style>
+    body {
+      background-color: rgb(177, 236, 255);
+      color: rgb(0, 0, 0);
+      font: normal 20pt "Times New Roman", serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font: normal 35pt 'Edwardian Script ITC', cursive;
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+      font: normal 25pt 'Castellar', serif;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .custom-button {
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .feedback-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffffaa;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 15px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="confirmarSaida()" class="custom-button">
+      <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+           alt="Ícone TV">
+      Voltar à página inicial
+    </button>
+  </div>
+
+   <h1>Cupcake de Chocolate da Coraline</h1>
+  <h2>Ingredientes</h2>
+  <h3>Rendimento: 12 cupcakes com charme misterioso</h3>
+  <div>
+    <p>1¾ xícara de farinha de trigo</p>
+    <p>¾ xícara de cacau em pó (sem açúcar)</p>
+    <p>1½ colher de chá de fermento em pó</p>
+    <p>½ colher de chá de bicarbonato de sódio</p>
+    <p>1 pitada de sal</p>
+    <p>1 xícara de açúcar</p>
+    <p>2 ovos grandes</p>
+    <p>½ xícara de leite</p>
+    <p>½ xícara de óleo vegetal ou manteiga derretida</p>
+    <p>1 colher de chá de essência de baunilha</p>
+    <br>
+    <strong>Cobertura “Olhos Mágicos”:</strong>
+    <p>1 xícara de creme de leite fresco (para chantilly)</p>
+    <p>2 colheres de sopa de açúcar de confeiteiro</p>
+    <p>12 botões de chocolate branco para decorar (como “olhos”)</p>
+    <p>Confeitos preto ou roxo para contornar</p>
+  </div>
+
+  <h2>Modo de Preparo</h2>
+  <p>1. Preaqueça o forno a 180 °C. Forre uma assadeira com forminhas de papel.</p>
+  <p>2. Misture os ingredientes secos (farinha, cacau, fermento, bicarbonato e sal).</p>
+  <p>3. Em outra tigela, bata ovos, açúcar, leite, óleo e baunilha até ficar homogêneo.</p>
+  <p>4. Junte os secos aos líquidos, misture até incorporar (não bata demais).</p>
+  <p>5. Distribua a massa nas forminhas (⅔ cheias) e asse por 18–22 minutos. Faça o teste do palito.</p>
+  <p>6. Enquanto esfriam, bata o creme de leite com o açúcar até ponto de chantilly firme.</p>
+  <p>7. Recheie cada cupcake com uma generosa camada de chantilly.</p>
+  <p>8. Acrescente um botão de chocolate branco no centro e contorne com confeitos escuros, criando “olhos místicos”.</p>
+
+  <h2>Deixe sua Foto ou Opinião Abaixo</h2>
+  <div class="feedback-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="opinion">Sua opinião:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" placeholder="Digite aqui..." required></textarea><br><br>
+
+      <label for="photo">Sua foto (opcional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+<script>
+  function confirmarSaida() {
+    if (confirm("Tem certeza que deseja sair desta página?")) {
+      window.location.href = "site001.html";
+    }
+  }
+</script>
+</body>
+</html>

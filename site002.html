@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookFlix</title>
+  <style>
+    body {
+      background-color: rgb(177, 236, 255);
+      color: rgb(0, 0, 0);
+      font: normal 20pt "Times New Roman", serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font: normal 35pt 'Edwardian Script ITC', cursive;
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+      font: normal 25pt 'Castellar', serif;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .custom-button {
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .feedback-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffffaa;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 15px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="button-container">
+  <button onclick="confirmarSaida()" class="custom-button">
+    <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+         alt="Ícone TV">
+    Voltar à página inicial
+  </button>
+</div>
+
+  <h1>Ratatouille</h1>
+  <h2>Ingredientes</h2>
+  <h3>Rendimento: 6 porções</h3>
+  <div>
+    <p>Molho:</p>
+<p>4 colheres de sopa de azeite de oliva</p>
+<p>1 cebola média picada</p>
+<p>4 dentes de alho picados</p>
+<p>2 pimentões vermelhos picados</p>
+<p>6 tomates maduros grandes (ou 2 latas de tomate pelado)</p>
+<p>Sal e pimenta-do-reino a gosto</p>
+<p>1 colher de chá de ervas de Provence (ou tomilho + manjericão)</p>
+
+<p>Legumes:</p>
+<p>2 abobrinhas verdes médias</p>
+<p>2 abobrinhas amarelas (ou use só da verde se não tiver)</p>
+<p>2 berinjelas médias</p>
+<p>4 tomates italianos firmes</p>
+<p>1 pimentão amarelo (opcional, para mais cor)</p>
+<p>Azeite de oliva para regar</p>
+<p>7- Sal, pimenta e ervas de Provence</p>
+
+  </div>
+
+  <h2>Modo de Preparo</h2>
+  <h3>1. Faça o molho:</h3>
+<p>Aqueça o azeite em uma panela.
+
+Refogue a cebola e o alho até ficarem dourados.
+
+Adicione o pimentão e os tomates picados.
+
+Cozinhe em fogo baixo por cerca de 15 minutos, mexendo de vez em quando.
+
+Tempere com sal, pimenta e ervas. Deixe apurar e depois bata no liquidificador até formar um molho liso. Reserve.</p>
+  
+<h3>2. Prepare os legumes:</h3>
+<p>Corte os legumes em rodelas bem finas (com uma faca afiada ou mandoline).
+
+Tente manter os tamanhos parecidos para um visual bonito.</p>
+
+  <h3>3. Montagem:</h3>
+<p>Espalhe o molho no fundo de um refratário redondo ou oval.
+
+Disponha as fatias de legumes em fileiras ou em espiral, intercalando as cores.
+
+Regue com azeite de oliva, salpique sal, pimenta e ervas.</p>
+  
+<h3>4. Assar:</h3>
+<p>Cubra com papel manteiga (ou papel alumínio).
+
+Leve ao forno pré-aquecido a 180 °C por cerca de 40 minutos.
+
+Remova o papel e asse por mais 10–15 minutos para dourar levemente. </p>
+ 
+
+  <h3>Bom Apetite!</h3>
+
+
+  <h2>Deixe sua Foto ou Opinião Abaixo</h2>
+  <div class="feedback-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="opinion">Sua opinião:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" cols="50" placeholder="Digite aqui..." required></textarea><br><br>
+
+      <label for="photo">Sua foto (opcional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+<script>
+  function confirmarSaida() {
+    if (confirm("Tem certeza que deseja sair desta página?")) {
+      window.location.href = "site001.html";
+    }
+  }
+</script>
+</html>

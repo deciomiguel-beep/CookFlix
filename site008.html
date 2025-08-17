@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookFlix</title>
+  <style>
+    body {
+      background-color: rgb(177, 236, 255);
+      color: rgb(0, 0, 0);
+      font: normal 20pt "Times New Roman", serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font: normal 35pt 'Edwardian Script ITC', cursive;
+    }
+
+    h3 {
+      text-align: center;
+      color: black;
+      font: normal 25pt 'Castellar', serif;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .custom-button {
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .feedback-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffffaa;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 15px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="confirmarSaida()" class="custom-button">
+      <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+           alt="Ícone TV">
+      Voltar à página inicial
+    </button>
+  </div>
+
+  <h1>Torta de Sorvete da Moranguinho</h1>
+  <h2>Ingredientes</h2>
+  <h3>Rendimento: 8 porções geladinhas</h3>
+  <div>
+    <p>1 pacote de biscoito tipo maisena (200g)</p>
+    <p>3 colheres de sopa de manteiga derretida</p>
+    <p>1 pote de sorvete de morango (ou sabor tutti frutti) – 2 litros</p>
+    <p>1 caixa de morangos frescos picados</p>
+    <p>1 lata de leite condensado</p>
+    <p>1 caixa de creme de leite</p>
+    <p>1 colher de sopa de essência de baunilha (opcional)</p>
+    <p>Chantilly e confeitos rosa para decorar</p>
+  </div>
+
+  <h2>Modo de Preparo</h2>
+  <p>1- Triture os biscoitos até virar uma farofa. Misture com a manteiga e forre o fundo de uma forma (de preferência com fundo removível).</p>
+  <p>2- Leve essa base ao congelador por 15 minutos para firmar.</p>
+  <p>3- Em uma tigela, misture o sorvete levemente amolecido com os morangos picados e metade do leite condensado.</p>
+  <p>4- Despeje essa mistura sobre a base congelada e alise com uma espátula. Leve ao freezer por pelo menos 3 horas.</p>
+  <p>5- Na hora de servir, bata o creme de leite com o restante do leite condensado e a baunilha até ficar cremoso (ou use chantilly pronto).</p>
+  <p>6- Cubra a torta com esse creme e decore com morangos inteiros, confeitos cor-de-rosa, estrelinhas e muito amor!</p>
+
+  <h3>Doce, divertida e digna da Moranguinho!</h3>
+
+  <h2>Deixe sua Foto ou Opinião Abaixo</h2>
+  <div class="feedback-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="opinion">Sua opinião:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" placeholder="Digite aqui..." required></textarea><br><br>
+
+      <label for="photo">Sua foto (opcional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+<script>
+  function confirmarSaida() {
+    if (confirm("Tem certeza que deseja sair desta página?")) {
+      window.location.href = "site001.html";
+    }
+  }
+</script>
+</body>
+</html>

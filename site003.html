@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookFlix</title>
+  <style>
+    body {
+      background-color: rgb(177, 236, 255);
+      color: rgb(0, 0, 0);
+      font: normal 20pt "Times New Roman", serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      font: normal 40pt 'Edwardian Script ITC', cursive;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font: normal 35pt 'Edwardian Script ITC', cursive;
+    }
+
+    h3 {
+      text-align: left;
+      color: black;
+      font: normal 25pt 'Castellar', serif;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
+
+    .custom-button {
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-button img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .feedback-container {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffffaa;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 500px;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 15px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="button-container">
+  <button onclick="confirmarSaida()" class="custom-button">
+    <img src="https://media.istockphoto.com/id/1472976011/pt/vetorial/cartoon-tv-set-with-no-signal.jpg?s=612x612&w=0&k=20&c=MNmv3aUbqR4smjr7XUi9GOx20_CcW1DibPgcyySWRPE=" 
+         alt="Ícone TV">
+    Voltar à página inicial
+  </button>
+</div>
+
+  <h1>Hambúrguer de Siri</h1>
+  <h2>Ingredientes</h2>
+  <h3>Rendimento: 8 porções</h3>
+  <div>
+    <p>8 Pães para hambúrguer</p>
+    <p>Manteiga para dourar</p>
+    <p>1 kg de carne ou siri moído (caso use carne, dê preferência a patinho)</p>
+    <p>1 Sachê de creme de cebola</p>
+    <p>1 Cebola média picada</p>
+    <p>4 Dentes de alho picado</p>
+    <p>Cebolinha a gosto</p>
+    <p>Sal a gosto</p>
+    <p>Orégano a gosto</p>
+    <p>Pimenta-do-reino a gosto</p>
+    <p>Ketchup e Mostarda</p>
+    <p>1 picles fatiado</p>
+    <p>Cebola fatiada em rodela</p>
+    <p>8 folhas de alface</p>
+    <p>8 fatias de queijo (cheddar ou mussarela)</p>
+    <p>Tomate em rodela</p>
+  </div>
+
+  <h2>Modo de Preparo</h2>
+  <p>1- Em uma vasilha, misture a carne, o creme de cebola, cebola picada, alho picado, cebolinha, sal, orégano e pimenta-do-reino.</p>
+  <p>2- Amasse bem e forme bolinhas, depois achate para ter a forma de hambúrguer.</p>
+  <p>3- Após isso, frite-os em uma frigideira com um pouco de óleo.</p>
+  <p>4- Com os hambúrgueres fritos, pegue os pães e corte ao meio horizontalmente, passe a manteiga e leve ao fogo em uma frigideira para dourar.</p>
+  <p>5- Com os pães dourados, pegue a metade de baixo, coloque a carne, os molhos, o picles fatiado, uma rodela de cebola, uma folha de alface, uma fatia de queijo, o tomate e finalize colocando a metade de cima do pão, exatamente nessa ordem.</p>
+  <p>6- Leve à frigideira com um pouco de água (aproximadamente uma colher de sobremesa) e tampe. Desta maneira, a água irá evaporar, derreter o queijo e manter o lanche quente, ou se preferir, derreta o queijo com um maçarico.</p>
+  <p>7- Lanche pronto, agora é só saborear juntamente com quem você gosta.</p>
+
+  <h3>Bom Apetite!</h3>
+
+
+  <h2>Deixe sua Foto ou Opinião Abaixo</h2>
+  <div class="feedback-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="opinion">Sua opinião:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" cols="50" placeholder="Digite aqui..." required></textarea><br><br>
+
+      <label for="photo">Sua foto (opcional):</label><br>
+      <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+<script>
+  function confirmarSaida() {
+    if (confirm("Tem certeza que deseja sair desta página?")) {
+      window.location.href = "site001.html";
+    }
+  }
+</script>
+</html>
