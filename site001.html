@@ -151,9 +151,25 @@
       </div>
     </a>
   </div>
-  <script>
-    window.alert("Seja Bem-Vindo!")
-    window.prompt("Qual seu nome?")
-  </script>
+<script>
+  // Verifica se o nome já está salvo no localStorage
+  let nomeUsuario = localStorage.getItem("nomeUsuario");
+
+  if (!nomeUsuario) {
+    // Se não tiver nome salvo, pede o nome
+    alert("Seja Bem-Vindo!");
+    nomeUsuario = prompt("Qual seu nome?");
+    
+    if (nomeUsuario) {
+      // Salva o nome no localStorage
+      localStorage.setItem("nomeUsuario", nomeUsuario);
+    }
+  } else {
+    // Se já tiver nome salvo, apenas exibe boas-vindas
+    alert("Bem-vindo de volta, " + nomeUsuario + "!");
+  }
+</script>
+
 </body>
 </
+
